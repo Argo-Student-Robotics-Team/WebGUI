@@ -1,0 +1,2 @@
+cd ./openmct
+npm start
