@@ -1,6 +1,6 @@
 # WebGUI
 
-Due to raspberry pi camera module limitation it is required for it to run **RPiOS**.
+Due to raspberry pi camera module limitation it is required for it to run **Raspberry Pi OS (64-bit)**.
 
 
 Installing necessary modules:
