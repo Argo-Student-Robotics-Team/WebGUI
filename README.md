@@ -25,3 +25,7 @@ To start web-gui:
 
 **THIS NEEDS TO BE RAN IN SEPARATE TERMINAL**
 **DO NOT CLOSE ANY OF THE TERMINALS IN ORDER FOR IT TO WORK**
+
+If Web-gui is empty import it from `layout.json`. You can refer to openmct documentation fort it.
+
+In order to set-up camera feed. Edit the openmct biggest frame (it would possibly show a connection error). And change the URL to `http://<raspberry pi IP>:8000`.
