@@ -1,1 +1,2 @@
 cd ./openmct
+npm install
