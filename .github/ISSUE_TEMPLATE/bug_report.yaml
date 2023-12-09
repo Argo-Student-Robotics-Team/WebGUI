@@ -14,7 +14,6 @@ body:
                 attributes:
                         label: Bug description
                         description: A clear and concise description of what the bug is. Include any screenshots that may help show the bug in action.
-                        placeholder: ex 'When running the install.sh script, the wrong version of npm is downloaded that is not compatible with the WebGUI software'
                 validations:
                         required: true
         -       type: dropdown
@@ -32,10 +31,6 @@ body:
                 attributes:
                         label: How to reproduce
                         description: A clear set of steps to reproduce the bug. Please include as much detail as possible to help reproduce it.
-                        placeholder: |
-                                1. Download source code
-                                2. Run install.sh
-                                3. Notice that an error saying the wrong npm version is installed is shown
                 validations:
                         required: true
         -       type: textarea
@@ -43,10 +38,6 @@ body:
                 attributes:
                         label: Expected behavior
                         description: A brief description of what you expected to happen.
-                        placeholder: |
-                                1. Download source code
-                                2. Run install.sh
-                                3. Correct version of npm is installed
                 validations:
                         required: true
         -       type: dropdown
@@ -64,9 +55,6 @@ body:
                 attributes:
                         label: Hardware specifications
                         description: What hardware was the software run on?
-                        placeholder: |
-                                SBC - Raspberry Pi 4B
-                                RAM - 1GB
                 validations:
                         required: true
         -       type: dropdown
@@ -96,6 +84,5 @@ body:
                 attributes:
                         label: Additional Comments
                         description: "Anything else you'd like to mention regarding the issue"
-                        placeholder: I ❤️ open source
                 validations:
                         required: false
