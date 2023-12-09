@@ -1,90 +1,100 @@
 name: Bug report
 description: Create a report to help us improve something that is not working correctly
-title: "Bug: <brief description of the issue>"
-labels: "Status: Needs Review, Type: Bug"
+title: "[BUG]:  <brief description of the issue>"
+labels: ["Needs Review", "Bug"]
+assignees:
+        - elstefanos
 body:
-  - type: markdown
-    attributes:
-      value: Thank you for taking the time to submit a bug report to. In order to get issues closed in a reasonable amount of time, you must include a baseline of information about the bug in question.
-  - type: checkboxes
-    id: checks
-    attributes:
-      label: Checks
-      description: Please fill out the following checkboxes
-      options:
-        - label: I have thoroughly read and understand 
-          required: true
-        - label: "The title of this issue follows the `Bug: brief description of bug` format, e.g. `Bug: Lesson complete button does not update on click`"
-          required: true
-        - label: Would you like to work on this issue?
-          required: false
-  - type: textarea
-    id: bug-report
-    attributes:
-      label: Bug description
-      description: A clear and concise description of what the bug is. Include any screenshots that may help show the bug in action.
-      placeholder: ex 'When clicking the complete lesson button at the bottom of the page the lesson doesn't complete'
-    validations:
-      required: true
-  - type: textarea
-    id: reproduction-steps
-    attributes:
-      label: How to reproduce
-      description: A clear set of steps to reproduce the bug. Please include as much detail as possible to help reproduce it.
-      placeholder: |
-        1. Sign in
-        2. Visit a lesson page
-        3. Click the complete button
-        4. The complete button does not update
-    validations:
-      required: true
-  - type: textarea
-    id: expected-behavior
-    attributes:
-      label: Expected behavior
-      description: A brief description of what you expected to happen.
-      placeholder: |
-        1. Sign in
-        2. Visit a lesson page
-        3. Click the complete button
-        4. The complete button updates correctly
-    validations:
-      required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
-        - Other
-  - type: dropdown
-    id: os
-    attributes:
-      label: What OS are you using?
-      multiple: true
-      options:
-        - Windows
-        - MacOS
-        - Ubuntu
-        - Android
-        - iOS
-  - type: input
-    id: contact
-    attributes:
-      label: Discord Name
-      description: Optionally provide your discord name to help coordinate changes there if necessary
-      placeholder: ex. odinite
-    validations:
-      required: false
-  - type: textarea
-    id: additional-comments
-    attributes:
-      label: Additional Comments
-      description: "Anything else you'd like to cover"
-      placeholder: We ❤️ open source
-    validations:
-      required: false
+        -       type: markdown
+                attributes:
+                        value: Thank you for taking the time to submit a bug report. In order to get issues closed in a reasonable amount of time, you must include a baseline of information about the bug in question.
+        -       type: textarea
+                id: bug-report
+                attributes:
+                        label: Bug description
+                        description: A clear and concise description of what the bug is. Include any screenshots that may help show the bug in action.
+                        placeholder: ex 'When running the install.sh script, the wrong version of npm is downloaded that is not compatible with the WebGUI software'
+                validations:
+                        required: true
+        -       type: dropdown
+                id: version
+                attributes:
+                        label: What software version does this issue occur on?
+                        multiple: true
+                        options:
+                                - 0.1.0
+                                - Other
+        -       type: textarea
+                id: reproduction-steps
+                attributes:
+                        label: How to reproduce
+                        description: A clear set of steps to reproduce the bug. Please include as much detail as possible to help reproduce it.
+                        placeholder: |
+                                1. Download source code
+                                2. Run install.sh
+                                3. Notice that an error saying the wrong npm version is installed is shown
+                validations:
+                        required: true
+        -       type: textarea
+                id: expected-behavior
+                attributes:
+                        label: Expected behavior
+                        description: A brief description of what you expected to happen.
+                        placeholder: |
+                                1. Download source code
+                                2. Run install.sh
+                                3. Correct version of npm is installed
+                validations:
+                        required: true
+        -       type: dropdown
+                id: os
+                attributes:
+                        label: What OS are you using?
+                        multiple: true
+                        options:
+                                - Ubuntu Server 22.04.3 LTS
+                                - Raspberry Pi OS 64-bit
+                validations:
+                        required: true
+        -       type: textarea
+                id: hardware
+                attributes:
+                        label: Hardware specifications
+                        description: What hardware was the software run on?
+                        placeholder: |
+                                SBC - Raspberry Pi 4B
+                                RAM - 1GB
+                validations:
+                        required: true
+        -       type: radio
+                id: priority
+                attributes:
+                        label: What is the priority of the issue?
+                        default: p4
+                        options:
+                                p1: P1
+                                p2: P2
+                                p3: P3
+                                p4: P4
+                validations:
+                        required: true
+        -       type: radio
+                id: severity
+                attributes:
+                        label: What is the severity of the issue?
+                        default: s4
+                        options:
+                                s1: S1
+                                s2: S2
+                                s3: S3
+                                s4: S4
+                validations:
+                        required: true
+        -       type: textarea
+                id: additional-comments
+                attributes:
+                        label: Additional Comments
+                        description: "Anything else you'd like to mention regarding the issue"
+                        placeholder: I ❤️ open source
+                validations:
+                        required: false
