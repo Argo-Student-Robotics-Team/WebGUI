@@ -3,7 +3,7 @@ description : Create a report to help us improve something that is not working c
 title : "[BUG]:  <brief description of the issue>"
 labels : "Needs Review", "Bug"
 assignees:
-        - NikolaZgonjanin
+        - ElStefanos
 body :
         -       type : markdown
                 attributes :
