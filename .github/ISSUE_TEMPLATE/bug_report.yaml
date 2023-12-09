@@ -66,28 +66,6 @@ body:
                                 RAM - 1GB
                 validations:
                         required: true
-        -       type: radio
-                id: priority
-                attributes:
-                        label: What is the priority of the issue?
-                        options:
-                                p1: P1
-                                p2: P2
-                                p3: P3
-                                p4: P4
-                validations:
-                        required: true
-        -       type: radio
-                id: severity
-                attributes:
-                        label: What is the severity of the issue?
-                        options:
-                                s1: S1
-                                s2: S2
-                                s3: S3
-                                s4: S4
-                validations:
-                        required: true
         -       type: textarea
                 id: additional-comments
                 attributes:
