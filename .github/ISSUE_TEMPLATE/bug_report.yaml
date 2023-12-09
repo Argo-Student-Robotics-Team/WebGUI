@@ -2,8 +2,6 @@ name: Bug report
 description: Create a report to help us improve something that is not working correctly
 title: "[BUG]:  <brief description of the issue>"
 labels: ["Needs Review", "Bug"]
-assignees:
-        - elstefanos
 body:
         -       type: markdown
                 attributes:
