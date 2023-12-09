@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+links:
+        - name: Reporting Issues
+          url: https://github.com/Argo-Student-Robotics-Team/.github/blob/main/documentation/2.Reporting_Issues.md
+          about: "Please read the following guide before submitting an issue."
