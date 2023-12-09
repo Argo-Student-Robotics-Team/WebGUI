@@ -2,6 +2,8 @@ name: Bug report
 description: Create a report to help us improve something that is not working correctly
 title: "[BUG]:  <brief description of the issue>"
 labels: ["Needs Review", "Bug"]
+assignees:
+        - ElStefanos
 body:
         -       type: markdown
                 attributes:
@@ -14,14 +16,6 @@ body:
                         placeholder: ex 'When running the install.sh script, the wrong version of npm is downloaded that is not compatible with the WebGUI software'
                 validations:
                         required: true
-        -       type: dropdown
-                id: version
-                attributes:
-                        label: What software version does this issue occur on?
-                        multiple: true
-                        options:
-                                - 0.1.0
-                                - Other
         -       type: textarea
                 id: reproduction-steps
                 attributes:
