@@ -1,31 +1,44 @@
-# WebGUI
+# WebGUI for Rover Operations
 
-Due to raspberry pi camera module limitation it is required for it to run **Raspberry Pi OS (64-bit)**.
+![Static Badge](https://img.shields.io/badge/Software_Version-0.1.0-blue)
+![Static Badge](https://img.shields.io/badge/Lincense-MIT-blue)
+![Static Badge](https://img.shields.io/badge/ROS2-Humble_Hawksbill-blue)
+![Static Badge](https://img.shields.io/badge/Project-Bober-blue)
 
+## Installation guide
 
-Installing necessary modules:
-`sudo ./install.sh`
+**Prerequisites:**
+- Raspberry Pi 4+ (4GB+ RAM)
+- Raspberry Pi OS (64-Bit)
 
-Installing openmct:
-`sudo ./install-web.sh`
+**1. Install necessary modules:**
+```bash
+sudo ./install.sh
+```
 
-If script cannot run check for `x` permission.
+**2. Install OpenMCT:**
+```bash
+sudo ./install-web.sh
+```
 
-To add it run:
-`sudo chmod +x *.sh`
+**3. Import Web GUI layout:**
 
+If the Web GUI appears empty, import the layout from layout.json. Refer to the OpenMCT documentation for guidance.
 
-To start camera stream:
-`./start-camera.sh`
+**4. Configure camera feed:**
 
-To start web-gui:
+Edit the OpenMCT biggest frame (may display a connection error) and change the URL to http://<raspberry pi IP>:8000.
 
-`./start-web.sh`
+## Usage guide
 
+**1. Start camera stream:**
+```bash
+./start-camera.sh
+```
 
-**THIS NEEDS TO BE RAN IN SEPARATE TERMINAL**
-**DO NOT CLOSE ANY OF THE TERMINALS IN ORDER FOR IT TO WORK**
+**2. Start Web GUI:**
+```bash
+./start-web.sh
+```
 
-If Web-gui is empty import it from `layout.json`. You can refer to openmct documentation fort it.
-
-In order to set-up camera feed. Edit the openmct biggest frame (it would possibly show a connection error). And change the URL to `http://<raspberry pi IP>:8000`.
+_Ensure that this is run in a separate terminal. Do not close any terminals for the system to function properly._
