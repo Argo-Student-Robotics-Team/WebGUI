@@ -27,7 +27,7 @@ If the Web GUI appears empty, import the layout from layout.json. Refer to the O
 
 **4. Configure camera feed:**
 
-Edit the OpenMCT biggest frame (may display a connection error) and change the URL to http://<raspberry pi IP>:8000.
+Edit the OpenMCT biggest frame (may display a connection error) and change the URL to http://``IP of camera server``:8000.
 
 ## Usage guide
 
